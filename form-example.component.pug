@@ -1,0 +1,5 @@
++b('form').auth-form([formGroup]="registrationForm", (submit)="onFormSubmit(registrationForm.value)", novalidate)
+  +e.field([class.error]="!registrationForm.controls.lastName.valid && registrationForm.controls.lastName.dirty")
+    +e('label').label(for="field-lastName") Фамилия
+    +e('input').input#field-lastName(formControlName="lastName", type="text")
+    error-messages([control]="registrationForm.controls.lastName")
