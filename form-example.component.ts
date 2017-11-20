@@ -5,7 +5,6 @@
       patronymic: [''],
       email: ['', [
         Validators.required,
-        // Validators.pattern(emailValidator.pattern),
         ValidationService.emailValidator,
       ]],
       password: [null, Validators.required ],
